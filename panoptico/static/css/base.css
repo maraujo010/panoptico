@@ -1,0 +1,538 @@
+
+html{		
+	margin:0px;
+	height:100%;		
+
+}
+
+
+@font-face {
+    font-family: MuseoSansBold;
+    src: url('/static/css/font/MuseoSans_900.otf');    
+}
+
+
+@font-face {
+    font-family: MuseoSans;
+    src: url('/static/css/font/MuseoSans_300.otf');    
+}
+
+body{	
+	background:url('/static/img/body_bg.gif') repeat;
+	margin:0px;
+	height:100%;	
+	font-size:12px;
+}
+
+ul, li {
+	font-family: Helvetica, Arial, sans-serif;
+	margin:0px;
+	padding:0px;
+}
+
+span, label{
+	font-family: Helvetica, Arial, sans-serif;	
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:12px;
+	color:#6d6d6d;
+	font-size:13px;
+}
+
+img {
+	border:0px;
+}
+
+a {
+	outline:none
+}
+
+#imgPreloader {
+		position: absolute;
+		left: -9999px;
+		top:  -9999px;	
+}
+
+#imgPreloader img{
+	display: block;
+}
+
+@media print {
+	div#imgPreloader, 
+	div#imgPreloader img {
+		visibility: hidden;
+		display: none;
+		}
+}
+
+
+#mainContainer {	
+	padding-bottom: 1px;
+}
+
+#innerContainer {
+	overflow: hidden;
+}
+
+#leftSide {
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	float:left;			
+	width:395px;	
+	background-color:transparent;
+	border-right: 1px solid #e7e7e7;
+
+}
+
+#rightSide {
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	margin-top:1px;
+	margin-left:397px;
+	background-color:transparent;
+}
+
+.rightSideTop {
+	float:left;
+	margin-top:40px;
+	margin-left:55px;
+	width:100%;		
+}
+
+
+/* creative commons */
+#author {
+	margin-top:110px;
+	float:left;
+	margin-left:45px;
+	margin-bottom:50px;
+}
+
+/* MainMenu */
+
+#mainMenu {	
+	width:100%;
+	margin-top:55px;
+	margin-left:50px;
+	float:left;	
+}
+
+#mainMenu ul {
+	list-style:none;
+}
+
+#mainMenu li{	
+	height:35px;	
+}
+
+#mainMenu li a{		
+	color:#010202;
+	font-size:26px;			
+	text-decoration:none;
+}
+
+#mainMenu li span{
+	font-family: 'MuseoSans', Helvetica, Arial, sans-serif;
+	line-height:40px;	
+	padding-left:40px;
+}
+
+#mainMenu li a:hover{		
+	color:red;	
+}
+
+.mainMenuMapa {
+	background:url('/static/img/mainMenu_mapa.png') left center no-repeat;
+}
+
+.mainMenuMapa:hover {
+	background:url('/static/img/mainMenu_mapa_hover.png') left center no-repeat;
+}
+
+.mainMenuMapaSelected {
+	background:url('/static/img/mainMenu_mapa_hover.png') left center no-repeat !important;
+	color:red !important;
+}
+
+.mainMenuBlog {
+	background:url('/static/img/mainMenu_blog.png') left center no-repeat;
+}
+
+.mainMenuBlog:hover {
+	background:url('/static/img/mainMenu_blog_hover.png') left center no-repeat;
+}
+
+.mainMenuBlogSelected {
+	background:url('/static/img/mainMenu_blog_hover.png') left center no-repeat !important;
+	color:red !important;
+}
+
+.mainMenuApp{
+	background:url('/static/img/mainMenu_android.png') left center no-repeat;
+}
+
+.mainMenuApp:hover {
+	background:url('/static/img/mainMenu_android_hover.png') left center no-repeat;
+}
+
+.mainMenuAppSelected {
+	background:url('/static/img/mainMenu_android_hover.png') left center no-repeat !important;
+	color:red !important;
+}
+
+.mainMenuEstatisticas{
+	background:url('/static/img/mainMenu_estatisticas.png') left center no-repeat;
+}
+
+.mainMenuEstatisticas:hover {
+	background:url('/static/img/mainMenu_estatisticas_hover.png') left center no-repeat;
+}
+
+.mainMenuEstatisticasSelected {
+	background:url('/static/img/mainMenu_estatisticas_hover.png') left center no-repeat !important;
+	color:red !important;
+}
+
+
+/* login menu */
+
+#loginMenu {	
+	margin-right:15px;
+	margin-top:20px;
+	float:right;
+}
+
+#loginMenu ul{	
+	float:right;
+	margin-right:25px;
+}
+
+#loginMenu li{
+	display:inline;
+}
+
+#loginMenu li a{
+	color:#010202;
+	font-size:12px;	
+	text-decoration:none;	
+}
+
+#loginMenu li span{
+	font-family: Helvetica, Arial, sans-serif !important;	
+}
+
+
+#loginMenu li a:hover{
+	color:red;	
+}
+
+#loginMenu img{
+	margin-left:4px;
+	margin-right:1px;
+	margin-bottom:3px;
+}
+
+
+/* logo */
+
+#logo{	
+	width:100%;
+	margin-left:50px;
+	margin-top:60px;
+	float:left;	
+}
+
+#logo h1 {
+	color:red;
+	margin:5px 0px 0px 0px;
+	padding:0px;
+	font-weight:normal;
+	font-family: 'MuseoSans', Helvetica, Arial, sans-serif !important;
+	font-size:1.0132em;	
+	text-transform:uppercase;	
+	letter-spacing:0px;	
+}
+
+
+/* pesquisa */
+
+#pesquisa {
+	margin-left:47px;
+	float:left;		
+	margin-top:40px;
+	padding:0px;
+	border:0px;
+	background-color:white;
+	border: 2px solid #d0d0d0; 
+	width:304px;
+	height:34px;
+}
+
+#pesquisa input[type=text]{
+	float:left;
+	background-color:transparent;
+	margin-left:20px;
+	border:0px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:grey;	
+	width:236px;
+	height:32px;
+	padding-top:1px;
+}
+
+#pesquisa_btn{
+	float:left;
+	margin-left:10px;
+	height:28px;
+	width:28px;
+	background-color:transparent;	
+	background-image:url('/static/img/lupa.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	border:0px;
+	margin-top:3px;
+	padding:0px;
+	cursor:pointer;
+}
+
+
+/* secondary menu */
+
+#secundaryMenu {
+	float:left;
+	margin-top:45px;
+	margin-left:50px;
+}
+
+#secundaryMenu ul{
+	list-style-type:none;
+	color:white;
+}
+
+#secundaryMenu ul li{
+	margin-bottom:8px;
+}
+
+#secundaryMenu ul li span{
+	font-family: 'MuseoSans', Helvetica, Arial, sans-serif !important;
+}
+
+#secundaryMenu ul li a{
+	color:#010202;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:17px;	
+	
+}
+
+#secundaryMenu ul li a:hover{
+	color:red;
+}
+
+.menuOpcSelected span{
+	color:red !important;	
+}
+
+
+/* forms */
+
+.baseForm ul {
+	list-style-type:none;	
+}
+
+.baseForm ul li{
+	float:left;
+	margin-top:25px;	
+}
+
+.baseForm label {
+	text-align:right;
+	display:block;		
+	font-size:11px;
+	color:#707070;	
+	font-weight:bold;
+	margin-bottom:2px;	
+}
+
+.baseFormInputText{
+	float:left;		
+	border:2px solid #d0d0d0;
+	width:208px;
+	height:34px;
+	background-color:white;
+}
+
+.baseFormInputText input{
+	padding-left:10px;
+	float:left;
+	border:0px;	
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:grey;	
+	width:197px;
+	height:32px;
+	padding-top:1px;
+	outline: none !important;
+}
+
+.baseFormInputText input:focus {
+  	box-shadow: 0px 0px 6px #467ec4; 
+}
+
+.baseFormSubmit_btn {
+	margin-top:30px !important;
+	float:right;
+	padidng:0px;
+	margin:0px;
+	width:90px;
+	height:28px !important;
+	cursor:pointer;
+	background-color:#707070;
+
+}
+
+.baseFormSubmit_btn span{
+	padding-top:6px;
+	padding-bottom:5px;
+	display:block;
+	text-align:center;
+	height:16px !important;
+	background-color:#a9a9a9;
+}
+
+.baseFormSubmit_btn span:hover{	
+	background-color:#707070;
+}
+
+.baseFormSubmit_btn a{	
+	color:white;
+	font-size:12px;
+	text-decoration:none;		
+}
+
+.baseFormSubmit_btn a:hover{	
+	color:white !important;
+}
+
+.errorlist{	
+	float:left;	
+	color:#b03600;
+	font-size:12px;	
+	padding:0px;
+}
+
+.errorlist li{	
+	margin:15px 0px 0px 0px!important;
+	padding:0px !important;
+}
+
+.submitFormError{
+	display:block !important;
+	float:left;
+	color:#b03600 !important;
+	font-size:12px !important;
+	margin-top:15px !important;
+}
+
+
+/* login.tpl */
+
+#loginPage{
+	float:left;
+	margin-top:95px;
+	background-color:#ececec;
+	margin-left:55px;
+	border:0px;
+	padding:10px 35px 10px 35px;
+	height:100% !important;
+	width:215px;
+}
+
+#loginArea {
+	float:left;	
+	margin:0px;
+	padding:0px;
+}
+
+#loginPageMenu {
+	float:right;
+	margin-top:50px;		
+	width:100%;
+	margin-bottom:20px;
+}
+
+#loginPageMenu ul{
+	float:right;
+	list-style-type:none;
+}
+
+#loginPageMenu li{	
+	text-align:right;
+	margin-top:3px;					
+}
+
+#loginPageMenu li a{	
+	color:black;
+	font-size:11px;					
+}
+
+#loginPageMenu li a:link{	
+	text-decoration:none;					
+}
+
+#loginPageMenu li a:hover{	
+	text-decoration:underline;					
+}
+
+#userIcon{
+	background-image:url('/static/img/user_icon.png');
+	background-repeat:no-repeat;
+	background-position:left;	
+}
+
+#userIcon span{
+	font-size: 14px;
+	margin-left:22px;	
+}
+
+
+/* home.tpl */
+#home {
+	width:100%;
+	text-align: center;
+	margin-top:100px;
+}
+
+#home .title {
+	display:inline-block;
+	color:grey;
+	width:100%;
+	font-size:22px;	
+}
+
+#home .subtitle {
+	margin-top:20px;
+	margin-bottom:20px;
+	display:inline-block;
+	width:100%;
+	font-size:18px;		
+	color:grey;
+	font-style: italic;
+}
+
+
+/* registar.tpl */
+
+#registrationPage{
+	float:left;
+	margin-top:50px;
+	background-color:#ececec;
+	margin-left:55px;
+	border:0px;
+	padding:10px 35px 10px 35px;
+	height:100% !important;
+	width:215px;
+}
